@@ -13,6 +13,9 @@ public class DocBook {
     }
 
     public void addDoc(String number, String date) {
+        if(number == null && date==null){
+            throw new IllegalArgumentException("number and date cannot be null");
+        }
         if(number == null){
             throw new IllegalArgumentException("number can not be null");
         }
@@ -20,6 +23,7 @@ public class DocBook {
             throw new IllegalArgumentException("date cannot be null");
 
         }
+
         docCount++;
     }
 }
