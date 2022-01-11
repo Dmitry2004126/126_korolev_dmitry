@@ -13,15 +13,16 @@ public class DocBook {
     }
 
     public void addDoc(String number, String date) {
-        if(number == null && date==null){
-            throw new IllegalArgumentException("number and date cannot be null");
-        }
+       StringBuilder error = new StringBuilder();
         if(number == null){
-            throw new IllegalArgumentException("number can not be null");
+           error.append("Number cannot be null\n");
         }
         if (date == null){
-            throw new IllegalArgumentException("date cannot be null");
+            error.append("Date cannot be null\n");
 
+        }
+        if (!error.isEmpty()){
+            throw new IllegalArgumentException(error.toString());
         }
 
         docCount++;
