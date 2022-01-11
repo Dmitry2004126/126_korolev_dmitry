@@ -6,6 +6,7 @@ import org.junit.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class doc_tests extends Assert {
     @Test
     public void create_CreateEmptyDocBook_DocCountEqualsZero() {
