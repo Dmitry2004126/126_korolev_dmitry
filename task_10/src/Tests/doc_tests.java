@@ -54,6 +54,6 @@ public class doc_tests extends Assert {
 
         docBook.addDoc("number", "date");
         docBook.registerPaymentDoc(100, 01, "number", "date");
-        assertEquals(1, docBook.getDocs().get("number").getPaymentDocCount());
+        assertEquals(1, docBook.getDocs().get("number").getPaymentDoCount());
     }
 }

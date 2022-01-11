@@ -38,5 +38,9 @@ public class DocBook {
     public HashMap<String, Document> getDocs() {
         return data;
     }
+
+    public void registerPaymentDoc(int sum, int paymentDocNumber, String docNumber, String date) {
+        data.get(docNumber).registerPaymentDoc(sum,paymentDocNumber,date);
+    }
 }
 
