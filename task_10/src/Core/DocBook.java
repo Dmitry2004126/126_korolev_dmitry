@@ -3,7 +3,7 @@ package Core;
 import java.util.HashMap;
 
 public class DocBook {
-    private HashMap<String, String> data;
+    private HashMap<String, Document> data;
     private DocBook(){
         data= new HashMap<>();
     }
@@ -28,7 +28,10 @@ public class DocBook {
         }
 
         if(!data.containsKey(number)){
-            data.put(number, date);
+            data.put(number, new Document(date));
         }
+    }
+    public HashMap<String, Document> getDocs(){
+        return data;
     }
 }

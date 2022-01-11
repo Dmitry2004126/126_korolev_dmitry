@@ -39,7 +39,7 @@ public class doc_tests extends Assert {
     public void registerPaymentDoc_registerPayDocWithoutData_EqualsZero(){
         DocBook docBook = DocBook.create();
         docBook.addDoc("number", "date");
-        assertEquals(0, docBook.getDocs().get("number").getPaymentDocCount());
+        assertEquals(0, docBook.getDocs().get("number").getPaymentDoCount());
 
     }
 }
