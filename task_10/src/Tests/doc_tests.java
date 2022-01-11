@@ -22,7 +22,7 @@ public class doc_tests extends Assert {
     public void addDoc_addDocWithNullNumber_ThrowsException(){
         DocBook docBook = DocBook.create();
         var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc(null,"date"));
-        assertTrue(exc.getMessage().toLowerCase().contains("number cannot be null"));
+        assertTrue(exc.getMessage().toLowerCase().contains("number can not be null"));
     }
 
 }
