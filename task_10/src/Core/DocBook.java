@@ -4,34 +4,39 @@ import java.util.HashMap;
 
 public class DocBook {
     private HashMap<String, Document> data;
-    private DocBook(){
-        data= new HashMap<>();
+
+    private DocBook() {
+        data = new HashMap<>();
     }
-    public int getDocCount(){
+
+    public int getDocCount() {
         return data.size();
     }
-    public static DocBook create(){
+
+    public static DocBook create() {
         return new DocBook();
     }
 
     public void addDoc(String number, String date) {
-       StringBuilder error = new StringBuilder();
-        if(number == null){
-           error.append("Number cannot be null\n");
+        StringBuilder error = new StringBuilder();
+        if (number == null) {
+            error.append("Number cannot be null\n");
         }
-        if (date == null){
+        if (date == null) {
             error.append("Date cannot be null\n");
 
         }
-        if (!error.isEmpty()){
+        if (!error.isEmpty()) {
             throw new IllegalArgumentException(error.toString());
         }
 
-        if(!data.containsKey(number)){
+        if (!data.containsKey(number)) {
             data.put(number, new Document(date));
         }
     }
-    public HashMap<String, Document> getDocs(){
+
+    public HashMap<String, Document> getDocs() {
         return data;
     }
 }
+
