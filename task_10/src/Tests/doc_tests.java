@@ -1,5 +1,6 @@
 package Tests;
 
+import Core.DocBook;
 import org.junit.*;
 
 public class doc_tests extends Assert {
