@@ -35,4 +35,11 @@ public class doc_tests extends Assert {
         assertTrue(exc.getMessage().toLowerCase().contains("number cannot be null") &&
                 exc.getMessage().toLowerCase().contains("date cannot be null"));
     }
+    @Test
+    public void registerPaymentDoc_registerPayDocWithoutData_EqualsZero(){
+        DocBook docBook = DocBook.create();
+        docBook.addDoc("number", "date");
+        assertEquals(0, docBook.getDocs().get("number").getPaymentDocCount());
+
+    }
 }
