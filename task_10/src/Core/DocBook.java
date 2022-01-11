@@ -63,5 +63,8 @@ public class DocBook {
 
         return payments;
     }
+    public void deletePayment(String docNumber, int paymentDocNumber, String paymentDocDate) {
+        data.get(docNumber).getPaymentDocuments().remove(paymentDocNumber);
+    }
 }
 
