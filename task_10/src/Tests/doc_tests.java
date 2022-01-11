@@ -3,7 +3,8 @@ package Tests;
 import Core.DocBook;
 import Core.TypeOfPaymentDoc;
 import org.junit.*;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class doc_tests extends Assert {
     @Test
@@ -57,18 +58,20 @@ public class doc_tests extends Assert {
         docBook.registerPaymentDoc(100, 01, "number", TypeOfPaymentDoc.BankOrder, "date");
         assertEquals(1, docBook.getDocs().get("number").getPaymentDocCount());
     }
+
     @Test
-    public void registerPaymentDoc_registerPayDocWithData_PaymentDocCountEqualsThree(){
+    public void registerPaymentDoc_registerPayDocWithData_PaymentDocCountEqualsThree() {
         DocBook docBook = DocBook.create();
-        docBook.addDoc("number","date");
-        docBook.registerPaymentDoc(100, 01, "number", TypeOfPaymentDoc.PaymentOrder,"20000101");
+        docBook.addDoc("number", "date");
+        docBook.registerPaymentDoc(100, 01, "number", TypeOfPaymentDoc.PaymentOrder, "20000101");
         docBook.registerPaymentDoc(200, 02, "number", TypeOfPaymentDoc.PaymentOrder, "20000202");
         docBook.registerPaymentDoc(300, 03, "number", TypeOfPaymentDoc.PaymentOrder, "20000303");
-        assertEquals(3,docBook.getDocs().get("number").getPaymentDocCount());
+        assertEquals(3, docBook.getDocs().get("number").getPaymentDocCount());
 
     }
+
     @Test
-    public void registerPaymentDoc_registerPayDocWithSumLessThenZero_TrowsException(){
+    public void registerPaymentDoc_registerPayDocWithSumLessThenZero_TrowsException() {
         DocBook docBook = DocBook.create();
         docBook.addDoc("number", "date");
 
@@ -76,13 +79,31 @@ public class doc_tests extends Assert {
                 docBook.registerPaymentDoc(-100, 01, "number", TypeOfPaymentDoc.PaymentOrder, "20030204"));
         assertTrue(exc.getMessage().toLowerCase().contains("sum is a positive number"));
     }
+
     @Test
-    public void registerPaymentDoc_registerPayDocWithPaymentDocNumberLessThenZero_TrowsException(){
+    public void registerPaymentDoc_registerPayDocWithPaymentDocNumberLessThenZero_TrowsException() {
         DocBook docBook = DocBook.create();
-        docBook.addDoc("number","date");
+        docBook.addDoc("number", "date");
 
         var exc = assertThrows(IllegalArgumentException.class, () ->
                 docBook.registerPaymentDoc(100, -7, "number", TypeOfPaymentDoc.PaymentOrder, "20030204"));
         assertTrue(exc.getMessage().toLowerCase().contains("number of payment document is a positive number"));
+    }
+
+    @Test
+    public void getList_getListOfAllPayments_equalLists() {
+        DocBook docBook = DocBook.create();
+        docBook.addDoc("number", "date");
+        docBook.registerPaymentDoc(100, 01, "number", TypeOfPaymentDoc.PaymentOrder, "20030204");
+        docBook.registerPaymentDoc(500, 02, "number", TypeOfPaymentDoc.BankOrder, "20030204");
+        docBook.registerPaymentDoc(300, 03, "number", TypeOfPaymentDoc.PaymentOrder, "20030204");
+
+        List<Integer> paymentDocs = new ArrayList();
+        paymentDocs.add(100);
+        paymentDocs.add(500);
+        paymentDocs.add(300);
+
+        assertArrayEquals(paymentDocs.toArray(), docBook.getAllPayments("number").toArray());
+
     }
 }
