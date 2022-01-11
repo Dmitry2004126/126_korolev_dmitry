@@ -39,8 +39,8 @@ public class DocBook {
         return data;
     }
 
-    public void registerPaymentDoc(int sum, int paymentDocNumber, String docNumber, String date) {
-        data.get(docNumber).registerPaymentDoc(sum,paymentDocNumber,date);
+    public void registerPaymentDoc(int sum, int paymentDocNumber, String docNumber, TypeOfPayment type , String date) {
+        data.get(docNumber).registerPaymentDoc(sum,paymentDocNumber, type, date);
     }
 }
 

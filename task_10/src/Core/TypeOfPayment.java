@@ -1,4 +1,6 @@
 package Core;
 
-public class TypeOfPayment {
+public enum TypeOfPayment {
+    PaymentOrder,
+    BankOrder
 }
