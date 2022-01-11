@@ -13,7 +13,7 @@ public class Document {
     public void registerPaymentDoc(int sum, int number, String date){
         paymentDocs.put(number, new PaymentDoc(sum,date));
     }
-    public int getPaymentDoCount(){
+    public int getPaymentDocCount(){
         return paymentDocs.size();
     }
 }
