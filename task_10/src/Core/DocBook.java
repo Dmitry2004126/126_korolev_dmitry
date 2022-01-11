@@ -3,12 +3,12 @@ package Core;
 import java.util.HashMap;
 
 public class DocBook {
-    private HashMap<String, String> docBook;
+    private HashMap<String, String> data;
     private DocBook(){
-        docBook= new HashMap<>();
+        data= new HashMap<>();
     }
     public int getDocCount(){
-        return docBook.size();
+        return data.size();
     }
     public static DocBook create(){
         return new DocBook();
@@ -27,8 +27,8 @@ public class DocBook {
             throw new IllegalArgumentException(error.toString());
         }
 
-        else {
-            docBook.put(number, date);
+        if(!data.containsKey(number)){
+            data.put(number, date);
         }
     }
 }
