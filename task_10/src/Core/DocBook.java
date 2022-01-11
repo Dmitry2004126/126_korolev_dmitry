@@ -1,12 +1,14 @@
 package Core;
 
+import java.util.HashMap;
+
 public class DocBook {
-    private int docCount;
+    private HashMap<String, String> docBook;
     private DocBook(){
-        docCount=0;
+        docBook= new HashMap<>();
     }
     public int getDocCount(){
-        return docCount;
+        return docBook.size();
     }
     public static DocBook create(){
         return new DocBook();
@@ -25,6 +27,8 @@ public class DocBook {
             throw new IllegalArgumentException(error.toString());
         }
 
-        docCount++;
+        else {
+            docBook.put(number, date);
+        }
     }
 }
