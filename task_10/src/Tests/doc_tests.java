@@ -118,6 +118,16 @@ public class doc_tests extends Assert {
         assertEquals(0, docBook.getDocs().get("number").getPaymentDocCount());
     }
     @Test
+    public void deletePaymentDoc_DeleteNonExistentPaymentDoc_EqualsOne(){
+        DocBook docBook = DocBook.create();
+        docBook.addDoc("number","20110825");
+        docBook.registerPaymentDoc(100,2, "number", TypeOfPaymentDoc.PaymentOrder,"20110919");
+
+
+        docBook.deletePayment( "number", 1, "20150321");
+        assertEquals(1, docBook.getDocs().get("number").getPaymentDocCount());
+    }
+    @Test
     public void getGeneralSum_CalculateDocGeneralSumOfPayments_GeneralSumEquals400(){
         DocBook docBook = DocBook.create();
         docBook.addDoc("123","20200327");
