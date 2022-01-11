@@ -10,7 +10,7 @@ public class Document {
         paymentDocs = new HashMap<>();
 
     }
-    public void registerPaymentDoc(int sum, int number, TypeOfPayment type, String date){
+    public void registerPaymentDoc(int sum, int number, TypeOfPaymentDoc type, String date){
         paymentDocs.put(number, new PaymentDoc(sum,type, date));
     }
     public int getPaymentDocCount(){

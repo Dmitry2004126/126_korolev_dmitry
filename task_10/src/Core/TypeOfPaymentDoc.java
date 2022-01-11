@@ -1,6 +1,6 @@
 package Core;
 
-public enum TypeOfPayment {
+public enum TypeOfPaymentDoc {
     PaymentOrder,
     BankOrder
 }
