@@ -6,40 +6,54 @@ import org.junit.*;
 
 public class doc_tests extends Assert {
     @Test
-    public void create_CreateEmptyDocBook_DocCountEqualsZero(){
+    public void create_CreateEmptyDocBook_DocCountEqualsZero() {
         DocBook docBook = DocBook.create();
-        assertEquals(0,docBook.getDocCount());
+        assertEquals(0, docBook.getDocCount());
     }
+
     @Test
-    public void addDoc_addDocWithNumberAndDate_DocCountEqualsOne(){
+    public void addDoc_addDocWithNumberAndDate_DocCountEqualsOne() {
         DocBook docBook = DocBook.create();
         docBook.addDoc("number", "date");
         assertEquals(1, docBook.getDocCount());
     }
+
     @Test
-    public void addDoc_addDocWithNullNumber_ThrowsException(){
+    public void addDoc_addDocWithNullNumber_ThrowsException() {
         DocBook docBook = DocBook.create();
-        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc(null,"date"));
+        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc(null, "date"));
         assertTrue(exc.getMessage().toLowerCase().contains("number cannot be null"));
     }
+
     @Test
-    public void addDoc_addDocWithNullDate_ThrowsException(){
+    public void addDoc_addDocWithNullDate_ThrowsException() {
         DocBook docBook = DocBook.create();
-        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc("number",null));
+        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc("number", null));
         assertTrue(exc.getMessage().toLowerCase().contains("date cannot be null"));
     }
+
     @Test
-    public void addDoc_addDocWithNullNumberAndNullDate_ThrowsException(){
+    public void addDoc_addDocWithNullNumberAndNullDate_ThrowsException() {
         DocBook docBook = DocBook.create();
-        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc(null,null));
+        var exc = assertThrows(IllegalArgumentException.class, () -> docBook.addDoc(null, null));
         assertTrue(exc.getMessage().toLowerCase().contains("number cannot be null") &&
                 exc.getMessage().toLowerCase().contains("date cannot be null"));
     }
+
     @Test
-    public void registerPaymentDoc_registerPayDocWithoutData_PaymentDoCountEqualsZero(){
+    public void registerPaymentDoc_registerPayDocWithoutData_PaymentDoCountEqualsZero() {
         DocBook docBook = DocBook.create();
         docBook.addDoc("number", "date");
         assertEquals(0, docBook.getDocs().get("number").getPaymentDoCount());
 
+    }
+
+    @Test
+    public void registerPaymentDoc_registerPayDocWithData_PaymentDocCountEqualsOne() {
+        DocBook docBook = DocBook.create();
+
+        docBook.addDoc("number", "date");
+        docBook.registerPaymentDoc(100, 01, "number", "date");
+        assertEquals(1, docBook.getDocs().get("number").getPaymentDocCount());
     }
 }
