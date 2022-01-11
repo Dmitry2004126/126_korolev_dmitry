@@ -1,6 +1,8 @@
 package Core;
 
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DocBook {
     private HashMap<String, Document> data;
@@ -51,6 +53,15 @@ public class DocBook {
             throw new IllegalArgumentException(error.toString());
         }
         data.get(docNumber).registerPaymentDoc(sum,paymentDocNumber, type, date);
+    }
+    public List<Integer> getAllPayments() {
+        List<Integer> payments = new ArrayList();
+        for(Document document: data.values()){
+            for(PaymentDoc paymentDoc : document.getPaymentDocuments().values())
+                payments.add(paymentDoc.getSum());
+        }
+
+        return payments;
     }
 }
 

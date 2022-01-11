@@ -1,6 +1,8 @@
 package Core;
 
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Document {
     private String date;
@@ -15,5 +17,16 @@ public class Document {
     }
     public int getPaymentDocCount(){
         return paymentDocs.size();
+    }
+    public HashMap<Integer, PaymentDoc> getPaymentDocuments(){
+        return paymentDocs;
+    }
+    public List<Integer> getListOfPayments() {
+        List<Integer> payments = new ArrayList();
+        for(PaymentDoc paymentDoc : paymentDocs.values()){
+            payments.add(paymentDoc.getSum());
+        }
+
+        return payments;
     }
 }

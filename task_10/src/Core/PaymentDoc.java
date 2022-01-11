@@ -9,5 +9,8 @@ public class PaymentDoc {
         this.type=type;
         this.date = date;
     }
+    public int getSum(){
+        return sum;
+    }
 
 }
