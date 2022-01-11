@@ -7,20 +7,23 @@ import java.util.Scanner;
 
 public class DocBook {
     private int PaymentDocCount;
+
     private HashMap<String, Document> data;
 
     public DocBook() {
         data = new HashMap<>();
         PaymentDocCount= 0;
     }
+    public static DocBook create(){
+        return new DocBook();}
+
+
 
     public int getDocCount() {
         return data.size();
     }
 
-    public static DocBook create() {
-        return new DocBook();
-    }
+
 
     public void addDoc(String number, String date) {
         StringBuilder error = new StringBuilder();
@@ -46,41 +49,45 @@ public class DocBook {
         return data;
     }
 
-    public void registerPaymentDoc(int sum, int paymentDocNumber, String docNumber, TypeOfPaymentDoc type , String date) {
+    public void registerPaymentDoc(int sum, int paymentDocNumber, String docNumber, TypeOfPaymentDoc type, String date) {
         StringBuilder error = new StringBuilder();
-        if(sum<0){
+        if (sum < 0) {
             error.append("sum is a positive number\n");
         }
-        if(paymentDocNumber<0){
+        if (paymentDocNumber < 0) {
             error.append("number of payment document is a positive number\n");
         }
-        if(!error.isEmpty()){
+
+        if (!error.isEmpty()) {
             throw new IllegalArgumentException(error.toString());
-        }
-        else {
+        } else {
             data.get(docNumber).registerPaymentDoc(sum, paymentDocNumber, type, date);
-            PaymentDocCount++;
+PaymentDocCount++;
             System.out.println("Платежный документ создан успешно!");
 
         }
     }
+
     public List<Integer> getAllPayments() {
         List<Integer> payments = new ArrayList();
-        for(Document document: data.values()){
-            for(PaymentDoc paymentDoc : document.getPaymentDocuments().values())
+        for (Document document : data.values()) {
+            for (PaymentDoc paymentDoc : document.getPaymentDocuments().values())
                 payments.add(paymentDoc.getSum());
         }
 
         return payments;
     }
+
     public void deletePayment(String docNumber, int paymentDocNumber, String paymentDocDate) {
         data.get(docNumber).getPaymentDocuments().remove(paymentDocNumber);
     }
-    public int getAllPaymentDocCount(){
+    public int getAllPaymentDocCount() {
         return PaymentDocCount;
     }
-     public void run(){
-         System.out.println("1 - добавление договора");
+
+
+        public void run(){
+        System.out.println("1 - добавление договора");
          System.out.println("2 - добавление платежного документа");
          System.out.println("3 - вычисление суммы всех платежей по договору с заданным номером");
          System.out.println("4 - ");
@@ -89,7 +96,7 @@ public class DocBook {
          System.out.println("7 - ");
          System.out.println("8 - ");
 
-         DocBook.create();
+        DocBook.create();
 
          Scanner sc = new Scanner(System.in);
          String command = sc.nextLine();
@@ -116,10 +123,6 @@ public class DocBook {
 
                  System.out.println("Какого типа платежный договор(введите 1, если банковский ордер, введите 2 - если платежное поручение) ");
                  int type = sc.nextInt();
-
-
-
-
                  if(type==1) registerPaymentDoc(sum, numberPay, numberDoc, TypeOfPaymentDoc.BankOrder, datePay);
                  else if(type==2)  registerPaymentDoc(sum, numberPay, numberDoc, TypeOfPaymentDoc.PaymentOrder,  datePay);
                  else System.out.println("неправильно введен тип платежного документа");
@@ -134,8 +137,9 @@ public class DocBook {
      }
 
 
+        }
 
 
 
-}
+
 
