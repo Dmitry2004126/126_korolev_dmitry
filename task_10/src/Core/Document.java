@@ -29,4 +29,11 @@ public class Document {
 
         return payments;
     }
+    public int getSumOfPayments() {
+        int sum=0;
+        for(PaymentDoc doc : paymentDocs.values()){
+            sum += doc.getSum();
+        }
+        return sum;
+    }
 }
