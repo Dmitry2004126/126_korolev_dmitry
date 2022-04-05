@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="95f2b0d6-178d-490a-8ec0-2490536365c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="27NZPoZaZ7zUzJxkieo8OLHYjJG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.Task3_Tests.HeapSort_HSortHugeUnsortedArrayWithSameElems_ArrayIsSorted">
+    <configuration name="Task3_Tests.HeapSort_HSortHugeUnsortedArrayWithSameElems_ArrayIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="HeapSort_HSortHugeUnsortedArrayWithSameElems_ArrayIsSorted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.HeapSort_HeapSortAlreadySortedData_DataIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="HeapSort_HeapSortAlreadySortedData_DataIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.HeapSort_HeapSortHugeUnsortedArrayContainingSameDigits_DataIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="HeapSort_HeapSortHugeUnsortedArrayContainingSameDigits_DataIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.HeapSort_SortHugeUnsortedArray_ArrayIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="HeapSort_SortHugeUnsortedArray_ArrayIsSorted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.HeapSort_SortSortedArray_ArrayIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="HeapSort_SortSortedArray_ArrayIsSorted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Task3_Tests.HeapSort_HSortHugeUnsortedArrayWithSameElems_ArrayIsSorted" />
+        <item itemvalue="JUnit.Task3_Tests.HeapSort_HeapSortHugeUnsortedArrayContainingSameDigits_DataIsCorrect" />
+        <item itemvalue="JUnit.Task3_Tests.HeapSort_SortHugeUnsortedArray_ArrayIsSorted" />
+        <item itemvalue="JUnit.Task3_Tests.HeapSort_SortSortedArray_ArrayIsSorted" />
+        <item itemvalue="JUnit.Task3_Tests.HeapSort_HeapSortAlreadySortedData_DataIsCorrect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95f2b0d6-178d-490a-8ec0-2490536365c5" name="Changes" comment="" />
+      <created>1649162484770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649162484770</updated>
+    </task>
+    <servers />
+  </component>
+</project>
