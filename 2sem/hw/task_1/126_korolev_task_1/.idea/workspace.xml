@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f28d35f3-137f-41a2-a4b5-f8bc77c96e3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task_1/126_korolev_task_1/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="27Q3wWuy4oTLwnLVZCi0JFpa95E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.Task1_Tests.remove_removeElementWithIndexEqualsSize_ThrowsException">
+    <configuration name="Task1_Tests.insert_insertElementToEmptyArray_ElemIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="insert_insertElementToEmptyArray_ElemIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.popBack_popBackElementFromEmptyArray_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="popBack_popBackElementFromEmptyArray_ThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.pushBack_pushBackElement_ElemIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushBack_pushBackElement_ElemIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.pushBack_pushToArrayWithSizeBackElement_ElemIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushBack_pushToArrayWithSizeBackElement_ElemIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.remove_removeElementWithIndexEqualsSize_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_korolev_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="remove_removeElementWithIndexEqualsSize_ThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Task1_Tests.remove_removeElementWithIndexEqualsSize_ThrowsException" />
+        <item itemvalue="JUnit.Task1_Tests.popBack_popBackElementFromEmptyArray_ThrowsException" />
+        <item itemvalue="JUnit.Task1_Tests.pushBack_pushToArrayWithSizeBackElement_ElemIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.pushBack_pushBackElement_ElemIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.insert_insertElementToEmptyArray_ElemIsCorrect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f28d35f3-137f-41a2-a4b5-f8bc77c96e3d" name="Changes" comment="" />
+      <created>1649238723590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649238723590</updated>
+    </task>
+    <servers />
+  </component>
+</project>
