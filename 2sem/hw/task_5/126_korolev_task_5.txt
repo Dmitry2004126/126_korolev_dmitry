@@ -77,3 +77,23 @@ RB_1
 83 x x b 
 90 x 99 b
 99 x x r
+
+RB_2
+49 23 94 b
+23 8 32 b
+8 x x b
+32 x 43 b
+43 x x r
+94 80 96 b
+80 x 81 b
+81 x x r
+96 x x b
+
+RB_3
+59 25 71 b
+25 19 33 b
+19 x x b
+33 x x b
+71 62 76 b
+62 x x b
+76 x x b
